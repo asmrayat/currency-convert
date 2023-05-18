@@ -36,10 +36,13 @@
                 android:text="Amount :"
                 />
             <EditText
+                android:id="@+id/ammount"
                 android:backgroundTint="@color/gray"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
                 />
 
         </LinearLayout>
@@ -53,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="From"/>
             <TextView
+                android:id="@+id/textFrom"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
@@ -67,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:text="To"/>
             <TextView
+             android:id="@+id/textSpacerNoTitle"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
@@ -86,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:text="Result:"/>
             <TextView
+                android:id="@+id/result"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/gray"
                 android:textSize="15dp"
@@ -95,6 +101,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/convertBtn"
             android:backgroundTint="#6200ee"
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"

@@ -24,33 +24,42 @@
             />
 
             <RadioGroup
+                android:id="@+id/fromGroup"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 >
                 <RadioButton
+                    android:id="@+id/group1usd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="USD"
+                    app:buttonTint="@color/black"
                     android:textColor="@color/black"/>
                 <RadioButton
+                    android:id="@+id/group1cad"
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CAD"
+                    app:buttonTint="@color/black"
                     android:textColor="@color/black"/>
                 <RadioButton
+                    android:id="@+id/group1jpy"
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="JPY"
+                    app:buttonTint="@color/black"
                     android:textColor="@color/black"/>
                 <RadioButton
+                    android:id="@+id/group1eur"
                     android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="EUR"
+                    app:buttonTint="@color/black"
                     android:textColor="@color/black"/>
 
             </RadioGroup>
@@ -64,38 +73,48 @@
             android:text="To:"
             />
         <RadioGroup
+            android:id="@+id/ToGroup"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
             <RadioButton
+                android:id="@+id/group2usd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="USD"
+                app:buttonTint="@color/black"
                 android:textColor="@color/black"/>
             <RadioButton
+                android:id="@+id/group2cad"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CAD"
+                app:buttonTint="@color/black"
                 android:textColor="@color/black"/>
             <RadioButton
+                android:id="@+id/group2jpy"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="JPY"
+                app:buttonTint="@color/black"
                 android:textColor="@color/black"/>
             <RadioButton
+                android:id="@+id/group2eur"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="EUR"
+                app:buttonTint="@color/black"
                 android:textColor="@color/black"/>
 
 
         </RadioGroup>
         <Button
+            android:id="@+id/curencyConfirmBtn"
             android:backgroundTint="#6200ee"
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
