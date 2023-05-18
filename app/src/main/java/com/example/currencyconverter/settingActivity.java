@@ -77,10 +77,11 @@ public class settingActivity extends AppCompatActivity {
         Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
     }
 
-    private void loadSettings() {
+    public void loadSettings() {
         SharedPreferences preferences = getSharedPreferences("Settings", MODE_PRIVATE);
         FromCurency = preferences.getString("FromCurrency", "");
         ToCurency = preferences.getString("ToCurrency", "");
+        return;
     }
 
     private void setSelectedRadioButton(RadioGroup radioGroup, String currency) {
