@@ -2,6 +2,7 @@ package com.example.currencyconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -25,7 +26,7 @@ public class settingActivity extends AppCompatActivity {
         ToGroup = findViewById(R.id.ToGroup);
         CurencyConfirmBtn = findViewById(R.id.curencyConfirmBtn);
         // Load saved settings
-        loadSettings();
+        //loadSettings();
 
         // Set selected RadioButton based on loaded data
         setSelectedRadioButton(FromGroup, FromCurency);
@@ -77,11 +78,14 @@ public class settingActivity extends AppCompatActivity {
         Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
     }
 
-    public void loadSettings() {
-        SharedPreferences preferences = getSharedPreferences("Settings", MODE_PRIVATE);
+    private SharedPreferences getSettingsSharedPreferences(Context context) {
+        return context.getSharedPreferences("Settings", MODE_PRIVATE);
+    }
+
+    public void loadSettings(Context context) {
+        SharedPreferences preferences = getSettingsSharedPreferences(context);
         FromCurency = preferences.getString("FromCurrency", "");
         ToCurency = preferences.getString("ToCurrency", "");
-        return;
     }
 
     private void setSelectedRadioButton(RadioGroup radioGroup, String currency) {
